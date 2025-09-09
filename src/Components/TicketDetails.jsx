@@ -14,7 +14,7 @@ const TicketDetails = () => {
   }
   console.log(application)
   return (
-    <div className="w-full bg-white rounded-lg p-4 space-y-2 shadow-md">
+    <div className="w-full bg-white rounded-lg p-4 space-y-2 shadow-md pt-8">
       <div className="space-y-4 flex-col">
         {/* Name and Employee ID */}
         <div className="flex justify-between">

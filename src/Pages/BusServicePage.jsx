@@ -45,30 +45,33 @@ const BusServicePage = () => {
           </div>
         </div>
 
-        <div className="mt-6 w-[90%] max-w-md border border-gray-300 rounded-lg bot flex flex-col items-center relative">
-          <h3 className=" font-bold  text-gray-700 mb-3 border-b-2 border-dashed border-gray-300 border-w">
-            Confirmed Bus Pass
-          </h3>
-          <div className="absolute top-0 left-0 w-10 h-10 overflow-hidden">
-            <div className="w-full h-full bg-green-500 clip-inward-triangle"></div>
-          </div>
+<div className="mt-6 w-[90%] max-w-md border border-gray-300 rounded-lg flex flex-col items-center relative overflow-hidden">
+  {/* Inward Green Curve */}
+  <div className="absolute top-0 left-0 w-16 h-16 bg-green-500 rotate-180 ">
+    <div className="w-full h-full bg-white rounded-br-full"></div>
+  </div>
 
-          <div className="qr-and-details-area rounded-lg  border-red-300  w-full">
-            {showTicketDetails ? (
-              <TicketDetails />
-            ) : (
-              <div className="flex justify-center items-center p-4">
-                <div className="w-72 h-72 bg-gray-200 flex items-center justify-center rounded">
-                  <img
-                    src={qrScanner}
-                    alt="QR Code"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-            )}
-          </div>
+  <h3 className="font-bold text-gray-700 mb-3 border-b-2 border-dashed border-gray-300">
+    Confirmed Bus Pass
+  </h3>
+
+  <div className="qr-and-details-area rounded-lg w-full">
+    {showTicketDetails ? (
+      <TicketDetails />
+    ) : (
+      <div className="flex justify-center items-center p-4">
+        <div className="w-72 h-72 bg-gray-200 flex items-center justify-center rounded">
+          <img
+            src={qrScanner}
+            alt="QR Code"
+            className="w-full h-full object-contain"
+          />
         </div>
+      </div>
+    )}
+  </div>
+</div>
+
 
         <button
           onClick={handleShowDetails}
