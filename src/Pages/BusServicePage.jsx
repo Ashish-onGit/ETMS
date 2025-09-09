@@ -59,7 +59,7 @@ const BusServicePage = () => {
     {showTicketDetails ? (
       <TicketDetails />
     ) : (
-      <div className="flex justify-center items-center p-4">
+      <div className="flex justify-center items-center p-4 pt-8">
         <div className="w-72 h-72 bg-gray-200 flex items-center justify-center rounded">
           <img
             src={qrScanner}
