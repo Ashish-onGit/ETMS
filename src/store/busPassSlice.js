@@ -19,7 +19,10 @@ const busPassSlice = createSlice({
       state.application = action.payload;
       const user = JSON.parse(localStorage.getItem("user"));
       if (user?.empId) {
-        localStorage.setItem(`busPass_${user.empId}`, JSON.stringify(action.payload));
+        localStorage.setItem(
+          `busPass_${user.empId}`,
+          JSON.stringify(action.payload)
+        );
       }
     },
     loadApplication(state, action) {
@@ -27,7 +30,6 @@ const busPassSlice = createSlice({
     },
   },
 });
-
 
 export const { saveApplication, loadApplication } = busPassSlice.actions;
 export default busPassSlice.reducer;

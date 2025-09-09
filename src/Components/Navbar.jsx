@@ -29,7 +29,7 @@ const Navbar = () => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const user = useSelector((state) => state.auth.user);
   const username = user?.fullName;
-  console.log(user);
+  // console.log(user);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -86,11 +86,10 @@ const Navbar = () => {
       icon: <ClipboardList size={18} />,
     },
     { to: "/settings", label: "Settings", icon: <Settings size={18} /> },
-  ].filter(Boolean); 
+  ].filter(Boolean);
   // Logout handler with confirmation
   const handleLogout = () => {
     const confirmLogout = window.confirm("Are you sure you want to logout?");
-
 
     if (confirmLogout) {
       dispatch(setLoading(true));
@@ -149,7 +148,7 @@ const Navbar = () => {
 
             {/* Logout at Bottom */}
             {isAuthenticated && (
-              <div className="mt-auto p-4">
+              <div className="mt-auto mb-10 p-4">
                 <button
                   onClick={handleLogout}
                   className="flex items-center gap-2 hover:underline text-red-600 bg-red-100 p-2 rounded-md w-full"

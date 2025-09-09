@@ -6,7 +6,7 @@ const HomePage = () => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
   return (
-    <div className="flex flex-col items-center pt-10 min-h-screen bg-gradient-to-b from-[#3d4fff] to-[#673ab7] text-white ">
+    <div className="flex flex-col items-center pt-10  h-[93vh] bg-gradient-to-b from-[#3d4fff] to-[#673ab7] text-white ">
       {/* Header */}
       <div className="text-center mb-10">
         <h2 className="text-lg">Welcome To</h2>

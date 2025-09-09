@@ -44,12 +44,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-body{
+/* body{
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300  ;
   font-style: normal;
-}
+
+} */
 @import "tailwindcss";
 .splashscreen{
   display: flex;
@@ -99,3 +100,7 @@ body{
   color: white;
   transform: rotateY(180deg);
 }
+
+/* .clip-curved-triangle {
+  clip-path: path("M 0 0 L 40 0 Q 0 40 0 0 Z");
+} */

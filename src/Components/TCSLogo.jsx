@@ -1,10 +1,10 @@
 import React from "react";
+import tcsLogo from "../assets/File_TCS Logo.jpg";
 
 const TCSLogo = () => {
   return (
-    <div className="absolute bottom-0 flex flex-col items-center w-full">
-      <p className="text-gray-600 text-sm font-semibold">tcs</p>
-      <p className="text-gray-600 text-xs">TATA CONSULTANCY SERVICES</p>
+    <div className="fixed bottom-0 flex flex-row items-center justify-center w-full z-50 bg-white p-2">
+      <img src={tcsLogo} alt="TCS Logo" className="h-8 w-auto" />
     </div>
   );
 };

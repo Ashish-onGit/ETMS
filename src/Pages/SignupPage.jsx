@@ -59,7 +59,7 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center bg-gradient-to-b from-[#3d4fff] to-[#673ab7] text-white px-4 ">
+    <div className="flex items-center justify-center bg-gradient-to-b from-[#3d4fff] to-[#673ab7] text-white px-4 min-h-screen">
       <form
         onSubmit={handleSubmit}
         className="bg-[#20155c] p-8 rounded-xl shadow-xl w-full max-w-sm space-y-5"
