@@ -15,21 +15,32 @@ const HomePage = () => {
       </div>
 
       {/* Buttons */}
-      <div className="w-full max-w-full space-y-6 ">
+      <div className="w-full flex flex-col items-end space-y-6 px-6 pr-0">
         {/* Bus Services */}
-        <Link to="bus-service" className="w-4/5 ml-20 flex  items-center justify-self-end gap-4 bg-[#20155c] py-7 px-6 rounded-l-full shadow-md border border-white hover:scale-105 transition-transform">
-          <Bus className="w-15 h-15" />
-          <span to="bus-service" className="text-xl font-semibold">Bus Services</span>
+        <Link
+          to="bus-service"
+          className="w-4/5 flex items-center gap-4 bg-[#20155c] py-7 px-6 rounded-l-full shadow-md border border-white hover:scale-105 transition-transform"
+        >
+          <Bus className="w-6 h-6" />
+          <span className="text-xl font-semibold">Bus Services</span>
         </Link>
 
-        <Link to="cab-service"  className="w-4/5 flex items-center justify-self-end-safe gap-4 bg-[#20155c] py-7 px-6 rounded-l-full shadow-md border border-white hover:scale-105 transition-transform">
-          <Car className="w-15 h-15" />
+        {/* Cab Services */}
+        <Link
+          to="cab-service"
+          className="w-4/5 flex items-center gap-4 bg-[#20155c] py-7 px-6 rounded-l-full shadow-md border border-white hover:scale-105 transition-transform"
+        >
+          <Car className="w-6 h-6" />
           <span className="text-xl font-semibold">Cab Services</span>
         </Link>
 
-        <Link to='geocode-yourself' className="w-4/5 flex items-center justify-self-end-safe gap-4 bg-[#20155c] py-7 px-6 rounded-l-full shadow-md border border-white hover:scale-105 transition-transform">
-          <MapPin className="w-15 h-15" />
-          <span to='geocode-yourself' className="text-xl font-semibold">Geocode Yourself</span>
+        {/* Geocode Yourself */}
+        <Link
+          to="geocode-yourself"
+          className="w-4/5 flex items-center gap-4 bg-[#20155c] py-7 px-6 rounded-l-full shadow-md border border-white hover:scale-105 transition-transform"
+        >
+          <MapPin className="w-6 h-6" />
+          <span className="text-xl font-semibold">Geocode Yourself</span>
         </Link>
       </div>
     </div>
