@@ -32,7 +32,7 @@ const TicketDetails = () => {
         <div className="flex justify-between">
           <div>
             <p className="text-gray-600">Bus Stop Name</p>
-            <p className="text-gray-800">{application.branch || "N/A"}</p>
+            <p className="text-gray-800">{application.busStopName || "N/A"}</p>
           </div>
           <div className="flex flex-col items-end">
             <p className="text-gray-600">Route Type</p>
