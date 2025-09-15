@@ -54,7 +54,7 @@ const BusServicePage = () => {
   <h3 className="font-bold text-xl text-gray-700 mt-4">
     Confirmed Bus Pass
   </h3>
-  <div className="w-[90%] h-1 mt-3 border-b-2 border-dashed border-gray-300 "> </div>
+  <div className="w-[80%] h-1 mt-3 border-b-2 border-dashed border-gray-300 z-50 "> </div>
 
   <div className="qr-and-details-area rounded-lg w-full">
     {showTicketDetails ? (
